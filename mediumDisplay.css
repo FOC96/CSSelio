@@ -1,0 +1,142 @@
+/* --------------------------------------------------------
+CSSelio – Medium Display Stylesheet
+
+Version: 1
+Last modified: January, 2018
+Author: Fernando Ortiz Rico Celio
+Email: fernando.ortizrc@outlook.com
+----------------------------------------------------------*/
+
+
+@media only screen and (max-width: 1024px) {
+    /*     Wide-6     */
+    h1 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    p.instructions {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="number"], input[type="date"], input[type="email"], input[type="password"], input[type="tel"], select, input[type="search"] {
+        height: 35px;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .topBarTranslucent {
+        height: 60px;
+        padding: 10px;
+				padding-right: 20px;
+				padding-left: 20px;
+        box-sizing: border-box;
+    }
+
+    .mainButton, .mainButtonDisabled, .secondButton {
+/*        min-width: 150px;*/
+        height: 40px;
+        margin-top: 45px;
+    }
+
+    .thirdButton, .thirdButtonSup {
+        height: 30px;
+        min-width: 100px;
+    }
+
+    .displaySpace {
+        width: 100%;
+        left: 0;
+/*        background: rgba(0,0,0,.15);*/
+        height: 100%;
+        position: fixed;
+        overflow: auto;
+    }
+
+    #sideBar {
+        width: calc(25% - 10px);
+        float: left;
+        min-height: calc(100% - 120px);
+        padding: 10px;
+        box-sizing: border-box;
+/*        background: rgba(0,0,0,.12);*/
+        margin-top: 80px;
+        position: fixed;
+    }
+
+    #mainContent {
+        width: calc(72.5% - 10px);
+        margin-left: 20px;
+        margin-right: 2%;
+        float: right;
+        box-sizing: border-box;
+        /* min-height: 100%; */
+        margin-top: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        overflow: auto;
+        padding-bottom: 80px;
+    }
+
+    .card {
+        width: 320px;
+        height: 420px;
+    }
+
+    #logoSalud {
+        width: 80px;
+        margin-left: calc(50% - 40px);
+        margin-right: calc(50% - 40px);
+        margin-bottom: 45px;
+    }
+
+    .multipleChoice {
+        padding: 5px;
+        min-height: 90px;
+        font-size: 15px;
+        max-width: 42%;
+    }
+
+		.topBarTranslucent #logoSalud {
+		    height: 20px;
+		    margin-left: 0px;
+		    margin-right: 0px;
+		    margin-bottom: 0px;
+		}
+
+		.topBarTranslucent #options {
+		    width: 80%;
+		}
+
+		.topBarTranslucent #options a {
+		    margin-left: 15px;
+		}
+
+		.topBarTranslucent #options a img {
+		    max-height: 18px;
+		}
+}

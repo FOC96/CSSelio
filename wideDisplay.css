@@ -1,0 +1,154 @@
+/* --------------------------------------------------------
+CSSelio – Wide Display Stylesheet
+
+Version: 1
+Last modified: January, 2018
+Author: Fernando Ortiz Rico Celio
+Email: fernando.ortizrc@outlook.com
+----------------------------------------------------------*/
+
+
+@media only screen and (min-width: 1024px) {
+    /*     DESKTOP     */
+    h1 {
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    p.instructions {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="number"], input[type="date"], input[type="email"], input[type="password"], input[type="tel"], select, input[type="search"] {
+        height: 40px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .topBarTranslucent {
+        height: 80px;
+        padding: 15px;
+				padding-right: 30px;
+				padding-left: 30px;
+        box-sizing: border-box;
+    }
+
+    .mainButton, .mainButtonDisabled, .secondButton {
+        min-width: 150px;
+        height: 45px;
+        margin-top: 55px;
+    }
+
+    .thirdButton {
+        height: 35px;
+        min-width: 100px;
+    }
+
+    .displaySpace {
+        width: 90%;
+        height: 100%;
+        position: fixed;
+        min-width: 1000px;
+        margin: auto;
+        left: 10%;
+        right: 0;
+        overflow: auto;
+    }
+
+    #sideBar {
+        width: calc(20% - 10px);
+        float: left;
+        min-height: calc(100% - 120px);
+        padding: 10px;
+        box-sizing: border-box;
+/*        background: rgba(0,0,0,.12);*/
+        margin-top: 120px;
+        position: fixed;
+    }
+
+    #mainContent {
+        width: calc(66% - 10px);
+        margin-left: 20px;
+        margin-right: 11.5%;
+        float: right;
+        box-sizing: border-box;
+        /* min-height: 100%; */
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        overflow: auto;
+        margin-top: 120px;
+        padding-bottom: 100px;
+    }
+
+    .card {
+        width: 380px;
+        height: 480px;
+    }
+
+    #logoSalud {
+        width: 100px;
+        margin-left: calc(50% - 50px);
+        margin-right: calc(50% - 50px);
+        margin-bottom: 55px;
+    }
+
+    .multipleChoice {
+        padding: 5px;
+        min-height: 110px;
+        font-size: 16px;
+    }
+
+		.topBarTranslucent #logoSalud {
+		    height: 30px;
+		    margin-left: 0px;
+		    margin-right: 0px;
+		    margin-bottom: 0px;
+		}
+
+		.topBarTranslucent #options {
+		    width: 80%;
+				height: 50px;
+		}
+
+		.topBarTranslucent #options a {
+		    margin-left: 25px;
+		}
+
+		.topBarTranslucent #options a img {
+		    height: 28px;
+		}
+
+		.topBarTranslucent #options #imagenPerfilPrincipal {
+			height: 40px !important;
+			border-radius: 20px;
+			background: red;
+		}
+
+		.formBox button {
+			margin-left: 15px;
+		}
+}

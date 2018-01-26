@@ -1,0 +1,111 @@
+/* --------------------------------------------------------
+CSSelio – Mobile Display Stylesheet
+
+Version: 1
+Last modified: January, 2018
+Author: Fernando Ortiz Rico Celio
+Email: fernando.ortizrc@outlook.com
+----------------------------------------------------------*/
+
+@media only screen and (max-width: 500px) {
+    body {
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    p.instructions {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="number"], input[type="date"], input[type="email"], input[type="password"], input[type="tel"], select, input[type="search"] {
+        height: 30px;
+        font-size: 14px;
+    }
+
+    #sideBar {
+        width: 100%;
+        height: calc(100% - 60px);
+        background: rgba(255,255,255,.8);
+        -webkit-backdrop-filter:blur(10px);
+        backdrop-filter:blur(10px);
+        position: absolute;
+        z-index: 98;
+        margin-top: 60px;
+        float: left;
+        display: none;
+    }
+
+    #mainContent {
+        width: 100%;
+        padding: 15px;
+        margin: auto ;
+        padding-top: 80px;
+        box-sizing: border-box;
+    }
+
+    .card {
+        width: 100% !important;
+        min-height: 100%;
+    }
+
+    #logoSalud {
+        width: 80px;
+        margin-left: calc(50% - 40px);
+        margin-right: calc(50% - 40px);
+        margin-bottom: 45px;
+    }
+
+    .multipleChoice {
+        padding: 5px;
+        min-height: 110px;
+        font-size: 15px;
+        max-width: 42%;
+        margin-top: 20px;
+    }
+
+		.topBarTranslucent #logoSalud {
+		    height: 20px;
+		    /* margin-left: 0px;
+		    margin-right: 0px;
+		    margin-bottom: 0px; */
+		}
+
+		.topBarTranslucent #options {
+		    display: none;
+		}
+
+		/* .topBarTranslucent #options a {
+		    max-height: 20px;
+		    margin-left: 15px;
+		}
+
+		.topBarTranslucent #options a img {
+		    max-height: 20px;
+		} */
+}
