@@ -2,7 +2,7 @@
 CSSelio – Wide Display Stylesheet
 
 Version: 1
-Last modified: January, 2018
+Last modified: February, 2018
 Author: Fernando Ortiz Rico Celio
 Email: fernando.ortizrc@outlook.com
 ----------------------------------------------------------*/
@@ -42,11 +42,16 @@ Email: fernando.ortizrc@outlook.com
         font-size: 14px;
     }
 
-    input[type="text"], input[type="number"], input[type="date"], input[type="email"], input[type="password"], input[type="tel"], select, input[type="search"] {
+    input[type="text"], input[type="number"], input[type="date"], input[type="email"], input[type="password"], input[type="tel"], select, input[type="search"], input[type="phone"] {
         height: 40px;
         font-size: 14px;
         margin-bottom: 20px;
     }
+
+		textarea {
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
 
     .topBarTranslucent {
         height: 80px;
@@ -62,20 +67,44 @@ Email: fernando.ortizrc@outlook.com
         margin-top: 55px;
     }
 
+		.toolButton, .toolButtonAdd {
+			min-height: 45px;
+			min-width: 45px;
+			max-height: 45px;
+			max-width: 45px;
+		}
+
+		.toolButtonAdd {
+			background: url(../../images/new/plus.svg) #02838D no-repeat;
+			background-size: 21px !important;
+			background-position: 12px 12px !important;
+		}
+
+		.toolButton img {
+			max-height: 22px;
+			max-width: 22px;
+			filter: contrast(0) brightness(2);
+		}
+
     .thirdButton {
-        height: 35px;
-        min-width: 100px;
+      height: 35px;
+      min-width: 100px;
+			font-size: 15px;
     }
 
+		.thirdButton img {
+			max-height: 14px;
+		}
+
     .displaySpace {
-        width: 90%;
-        height: 100%;
-        position: fixed;
-        min-width: 1000px;
-        margin: auto;
-        left: 10%;
-        right: 0;
-        overflow: auto;
+      width: 90%;
+      height: 100%;
+      position: fixed;
+      min-width: 1000px;
+      margin: auto;
+      left: 10%;
+      right: 0;
+      overflow: auto;
     }
 
     #sideBar {
@@ -84,7 +113,6 @@ Email: fernando.ortizrc@outlook.com
         min-height: calc(100% - 120px);
         padding: 10px;
         box-sizing: border-box;
-/*        background: rgba(0,0,0,.12);*/
         margin-top: 120px;
         position: fixed;
     }
@@ -134,7 +162,7 @@ Email: fernando.ortizrc@outlook.com
 				height: 50px;
 		}
 
-		.topBarTranslucent #options a {
+		.topBarTranslucent #options a, .topBarTranslucent #options #imagenPerfilPrincipal {
 		    margin-left: 25px;
 		}
 
@@ -142,10 +170,13 @@ Email: fernando.ortizrc@outlook.com
 		    height: 28px;
 		}
 
+		#menuIcon {
+			display: none;
+		}
+
 		.topBarTranslucent #options #imagenPerfilPrincipal {
 			height: 40px !important;
 			border-radius: 20px;
-			background: red;
 		}
 
 		.formBox button {
