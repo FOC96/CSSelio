@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,600,700,800,900');
+
+* {
+  font-family: 'Muli', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+}
+
+.lightTheme {
+  color: #1D1D1D;
+}
+
+/*  TEXT  */
+
+h1 {
+  font-weight: 900;
+  font-size: 2.3em;
+  margin-bottom: 0.8em;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.3em;
+  margin-bottom: 0.2em;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.05em;
+  margin-bottom: 0.4em;
+  text-align: justify;
+}
+
+.callout, button {
+  font-weight: 700;
+  font-size: 1.05em;
+  color: #A6A6A6;
+}
+
+label, .calloutSmall {
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #4C4C4C;
+}
+
+/*  Content size  */
+.oneContent {
+  min-width: 800px;
+  width: 80%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  min-height: 100%;
+  position: absolute;
+  padding: 1.5em;
+  box-sizing: border-box;
+}
+
+.barSpace {
+  padding-top: 50px;
+}
+
+.topBar {
+  width: 100%;
+  position: fixed;
+  background: rgba(255,255,255,.85);
+  -webkit-backdrop-filter:blur(10px);
+  height: 50px;
+  z-index: 3;
+}
+
+.one {
+  width: 100%;
+}
+
+.slideCards {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .oneContent {
+    min-width: 100%;
+  }
+}
+
+/*  FLEXBOX  */
+.flexForm {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.flexSides {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.flexOne, .flexTwo, .flexThree, .flexFour, .flexFive {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 5px;
+  margin-right: 5px;
+  min-width: 150px;
+  margin-bottom: 1em;
+}
+
+.flexOne *, .flexTwo *, .flexThree *, .flexFour *, .flexFive * {
+  width: 100%;
+}
+
+.flexOne {
+	flex-basis: 100%;
+	flex-grow: 3;
+}
+
+.flexTwo {
+  flex: 3 45%;
+}
+
+.flexThree {
+  flex: 2 30%;
+}
+
+.flexFour {
+  flex: 1 20%;
+}
+
+.flexFive {
+  flex: 1 15%;
+}
+
+
+/*  INPUTS, BUTTONS  */
+input, textarea {
+  background: rgba(255,255,255,0.10);
+  border: 1px solid #B7B7B7;
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: 1.05em;
+  padding: 15px;
+  box-sizing: border-box;
+  min-width: 100px;
+  height: 35px;
+  transition: 0.3s;
+}
+
+input:disabled, textarea:disabled {
+  background: #B7B7B7;
+  border: 1px solid #B7B7B7;
+  border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #028EB4;
+  caret-color: #028EB4;
+}
+
+input.error, textarea.error {
+  border: 1px solid #D0021B;
+}
+
+textarea {
+  min-height: 35px;
+}
+
+.primaryButton {
+  background: rgba(2,142,180,0.20);
+  border-radius: 6px;
+  height: 40px;
+  padding: 5px 15px 11px 15px;
+  box-sizing: border-box;
+  color: #028EB4;
+  text-align: center;
+  border: none;
+  min-width: 150px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  background: rgba(0,175,223,0.20);
+}
+
+.primaryButton:active {
+  background: rgba(0,94,120,0.30);
+}
+
+.secondaryButton {
+  background: rgba(255,255,255,0.00);
+  border: 1px solid #8C8C8C;
+  border-radius: 6px;
+  height: 40px;
+  padding: 5px 15px 11px 15px;
+  box-sizing: border-box;
+  color: #8C8C8C;
+  text-align: center;
+  min-width: 150px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.secondaryButton:hover {
+  background: rgba(100,100,100,0.00);
+  border: 1px solid #607A82;
+  color: #607A82;
+}
+
+.secondaryButton:active {
+  background: rgba(100,100,100,0.00);
+  border: 1px solid #0D4858;
+  color: #0D4858;
+}
+
+.destructiveButton {
+  background: rgba(208,2,27,0.15);
+  border-radius: 6px;
+  height: 40px;
+  padding: 5px 15px 11px 15px;
+  box-sizing: border-box;
+  color: #D0021B;
+  text-align: center;
+  border: none;
+  min-width: 150px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.destructiveButton:hover {
+  background: rgba(255,20,49,0.15);
+}
+
+.destructiveButton:active {
+  background: rgba(134,0,16,0.15);
+}
+
+.callout {
+  color: #A6A6A6;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.callout:hover {
+  color: #607A82;
+}
+
+.callout:active {
+  color: #0D4858;
+}
